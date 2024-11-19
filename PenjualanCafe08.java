@@ -5,16 +5,16 @@ public class PenjualanCafe08 {
         Scanner scanner = new Scanner(System.in);
 
         // Meminta input jumlah menu dan jumlah hari
-        System.out.print("Masukkan jumlah mahasiswa: ");
-        int jumlahMahasiswa = scanner.nextInt();
-        System.out.print("Masukkan jumlah tugas: ");
-        int jumlahTugas = scanner.nextInt();
+        System.out.print("Masukkan jumlah hari: ");
+        int jumlahHari = scanner.nextInt();
+        System.out.print("Masukkan jumlah menu: ");
+        int jumlahMenu = scanner.nextInt();
 
         // Menginisialisasi array penjualan berdasarkan input pengguna
-        int[][] penjualan = new int[jumlahMahasiswa][jumlahTugas];
+        int[][] penjualan = new int[jumlahMenu][jumlahHari];
 
         // Memasukkan data penjualan
-        inputDataPenjualan(penjualan, jumlahMahasiswa, jumlahTugas);
+        inputDataPenjualan(penjualan, jumlahMenu, jumlahHari);
         tampilkanSemuaData(penjualan);
         tampilkanMenuTerlaris(penjualan);
         tampilkanRataRataPenjualan(penjualan);
